@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 16%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tower1, #tower2, #tower3 {
+    width: 100px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.tower {
+    width: 100px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.disc {
+    height: 20px;
+    margin: 2px 0;
+    text-align: center;
+    color: white;
+}
+
+.disc[data-size="1"] { width: 20px; background: red; }
+.disc[data-size="2"] { width: 40px; background: orange; }
+.disc[data-size="3"] { width: 60px; background: yellow; }
+.disc[data-size="4"] { width: 80px; background: green; }
+.disc[data-size="5"] { width: 100px; background: blue; }
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+#controls button {
+    margin: 5px;
+    width: 150px;
+}
+
+#solve {
+    margin-top: 15px;
+    background-color: #28a745;
+    width: 200px;
+}
+
+#solve:hover {
+    background-color: #218838;
+}
+
+#solve:active {
+    background-color: #1e7e34;
+}
+

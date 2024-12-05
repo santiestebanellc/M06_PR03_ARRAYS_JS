@@ -1,1 +1,0 @@
-# M06_PR03_ARRAYS_JS
